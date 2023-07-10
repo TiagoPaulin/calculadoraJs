@@ -17,66 +17,66 @@
             <table id="table">
                 <tr class="row">
                     <td class="column">
-                        <button class="button">C</button>
+                        <button class="button" onclick=" displayClear()">C</button>
                     </td>
                     <td class="column">
-                        <button class="button"><</button>
+                        <button class="button" onclick="backspace()"><</button>
                     </td>
                     <td class="column">
-                        <button class="button">/</button>
+                        <button class="button" onclick="insert('/')">/</button>
                     </td>
                     <td class="column">
-                        <button class="button">X</button>
-                    </td>
-                </tr>
-                <tr class="row">
-                    <td class="column">
-                        <button class="button">7</button>
-                    </td>
-                    <td class="column">
-                        <button class="button">8</button>
-                    </td>
-                    <td class="column">
-                        <button class="button">9</button>
-                    </td>
-                    <td class="column">
-                        <button class="button">-</button>
+                        <button class="button" onclick="insert('x')">x</button>
                     </td>
                 </tr>
                 <tr class="row">
                     <td class="column">
-                        <button class="button">4</button>
+                        <button class="button" onclick="insert('7')">7</button>
                     </td>
                     <td class="column">
-                        <button class="button">5</button>
+                        <button class="button" onclick="insert('8')">8</button>
                     </td>
                     <td class="column">
-                        <button class="button">6</button>
+                        <button class="button" onclick="insert('9')">9</button>
                     </td>
                     <td class="column">
-                        <button class="button">+</button>
+                        <button class="button" onclick="insert('-')">-</button>
                     </td>
                 </tr>
                 <tr class="row">
                     <td class="column">
-                        <button class="button">1</button>
+                        <button class="button" onclick="insert('4')">4</button>
+                    </td> 
+                    <td class="column">
+                        <button class="button" onclick="insert('5')">5</button>
                     </td>
                     <td class="column">
-                        <button class="button">2</button>
+                        <button class="button" onclick="insert('6')">6</button>
                     </td>
                     <td class="column">
-                        <button class="button">3</button>
+                        <button class="button" onclick="insert('+')">+</button>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="column">
+                        <button class="button" onclick="insert('1')">1</button>
+                    </td>
+                    <td class="column">
+                        <button class="button" onclick="insert('2')">2</button>
+                    </td>
+                    <td class="column">
+                        <button class="button" onclick="insert('3')">3</button>
                     </td>
                     <td class="column" rowspan="2">
-                        <button class="button" style="height: 106px;">=</button>
+                        <button class="button" style="height: 106px;" onclick="calc()">=</button>
                     </td>
                 </tr>
                 <tr class="row">
                     <td class="column" colspan="2">
-                        <button class="button" style="width: 106px;">0</button>
+                        <button class="button" style="width: 106px;" onclick="insert('0')">0</button>
                     </td>
                     <td class="column">
-                        <button class="button">.</button>
+                        <button class="button" onclick="insert('.')">.</button>
                     </td>
                 </tr>
             </table>
